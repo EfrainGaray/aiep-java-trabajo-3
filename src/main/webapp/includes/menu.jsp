@@ -1,11 +1,15 @@
-  <nav class="light-blue lighten-1 pinned" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+  <nav class=" blue-grey lighten-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>HEA
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Ver Productos</a></li>
+         <li><a href="#">Venta</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Ver Productos</a></li>
+      </ul>
+         <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Venta</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
