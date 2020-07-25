@@ -14,7 +14,7 @@
         <h5 class="header col s12 light">obten nuestros productos con solo un Click</h5>
       </div>
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <a href="#stock" class="btn-large waves-effect waves-light orange">Conoce nuestro stock</a>
       </div>
       <br><br>
 
@@ -29,28 +29,34 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Nuestro Ciclo</h5>
+            <h2 class="center light-blue-text">
+                <img src="./assets/img/gift-card.png">
+            </h2>
+            <h5 class="center">Regala productos</h5>
 
-            <p class="light">Comvierte a los extraños en amigos a los amigos en clientes y a los clientes en vendedores</p>
+            <p class="light">Materializa tu cariño,genera una experiencia grata a tu seres queridos.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+             <h2 class="center light-blue-text">
+                <img src="./assets/img/sale.png">
+            </h2>
+            <h5 class="center">nuestros mejores descuentos</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">obten los mejor productos con descuentos inolvidables.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+             <h2 class="center light-blue-text">
+                <img src="./assets/img/box.png">
+            </h2>
+            <h5 class="center">Calidad de despacho</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">Nos preocupamos de la calidad y seguridad al enviar tus productos.</p>
           </div>
         </div>
       </div>
@@ -59,6 +65,8 @@
     <br><br>
   </div>
 
+<div class="container " id="stock">
+    <h<2>Conoce el stock de nuestros productos</h2>
   <table class="striped container purple lighten-3"">
         <thead>
           <tr>
@@ -94,5 +102,6 @@
           </tr>
         </tbody>
       </table>
+    </div>
 <jsp:include page="./includes/footer.jsp"/>
 
