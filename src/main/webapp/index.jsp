@@ -14,7 +14,7 @@
         <h5 class="header col s12 light">obten nuestros productos con solo un Click</h5>
       </div>
       <div class="row center">
-        <a href="#stock" class="btn-large waves-effect waves-light orange">Conoce nuestro stock</a>
+        <a href="#stock" class="btn-large waves-effect waves-light pulse cyan">Conoce nuestro stock</a>
       </div>
       <br><br>
 
@@ -66,7 +66,7 @@
   </div>
 
 <div class="container " id="stock">
-    <h<2>Conoce el stock de nuestros productos</h2>
+    <h2>Conoce el stock de nuestros productos</h2>
   <table class="striped container purple lighten-3"">
         <thead>
           <tr>
