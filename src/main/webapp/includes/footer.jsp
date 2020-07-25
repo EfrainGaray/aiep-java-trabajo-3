@@ -1,5 +1,5 @@
 
-<footer class="page-footer orange">
+<footer class="page-footer  blue-grey lighten-1">
     <img src="./assets/img/logo.png" width="150" class="absolute">
     <div class="container">
         <div class="row">
@@ -14,7 +14,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            HEA <a class="orange-text text-lighten-3" >Company</a>
         </div>
     </div>
 </footer>
