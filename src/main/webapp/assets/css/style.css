@@ -7,8 +7,20 @@
  */
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
+}
+#index-banner{
+    background: url(../img/hero-a.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0 -250px;
+    min-height: 500px; 
+}
+.pinned{
+    z-index: 9999;
 }
