@@ -1,4 +1,5 @@
   <nav class=" blue-grey darken-2" role="navigation">
+      <img src="./assets/img/logo.png" width="60" class="absolute">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>HEA
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Ver Productos</a></li>

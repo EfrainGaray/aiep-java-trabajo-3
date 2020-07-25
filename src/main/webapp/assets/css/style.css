@@ -36,3 +36,7 @@ blockquote{
 .header {
     padding-top: 10px;
 }
+
+.absolute{
+    position: absolute;
+}
