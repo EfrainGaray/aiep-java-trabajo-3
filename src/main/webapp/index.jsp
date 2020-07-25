@@ -67,7 +67,7 @@
 
 <div class="container " id="stock">
     <h2>Conoce el stock de nuestros productos</h2>
-  <table class="striped container purple lighten-3"">
+  <table class="striped container cyan lighten-4">
         <thead>
           <tr>
               <th>Codigo</th>
