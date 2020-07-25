@@ -5,6 +5,8 @@
  */
 package modelo_venta;
 
+import java.util.Optional;
+
 /**
  *
  * @author Henrr
@@ -15,17 +17,19 @@ public class Producto {
     private int precio;
     private int stock;
     private Categoria categoria;
+    private String img;
 
-    public Producto(int codigo, String nombre, int precio, int stock, Categoria categoria) {
+    public Producto() {
+    }
+
+    public Producto(int codigo, String nombre, int precio, int stock, Optional<String> img ) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
-        this.categoria = categoria;
+        this.img = img.isPresent() ? img.get() : null;
     }
     
-    public Producto(){}
-
     public int getCodigo() {
         return codigo;
     }
@@ -64,6 +68,14 @@ public class Producto {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
     
 }
