@@ -6,6 +6,7 @@
 package modelo_venta;
 
 import java.util.ArrayList;
+import java.util.Optional;
 import javax.ejb.Singleton;
 
 /**
@@ -62,7 +63,7 @@ public class Servicio implements ServicioLocal {
             if(codigo.equals(aux.getCodigo())){
                 if(Integer.parseInt(cantidad)<=aux.getStock()){
                     
-                    return""+(Integer.parseInt(cantidad)*aux.getPrecio()) ;
+                    return String.valueOf(Integer.parseInt(cantidad)*aux.getPrecio());
                 }else{
                     return "No hay stock suficiente";
                 }
