@@ -5,6 +5,7 @@
  */
 package modelo_venta;
 
+import java.util.ArrayList;
 import javax.ejb.Singleton;
 
 /**
@@ -13,7 +14,64 @@ import javax.ejb.Singleton;
  */
 @Singleton
 public class Servicio implements ServicioLocal {
+    private ArrayList<Producto> listaProducto= new ArrayList();
+    public Servicio() {
 
+        Categoria dentrada= new Categoria(1, "Dispositivo de Entrada","Dispositivo optico con conexión USB");
+        listaProducto.add(new Producto(1,"Mouse", 3000, 18, dentrada));
+        
+        Categoria dentrada2= new Categoria(2, "Dispositivo de Entrada","Conexión USB");
+        listaProducto.add(new Producto(2,"Teclado", 5000, 15, dentrada2));
+        
+        Categoria almacenamiento= new Categoria(3, "Almacenamiento","Conexión USB");
+        listaProducto.add(new Producto(3,"Pendrive 8GB", 4000, 10, almacenamiento));
+        
+        Categoria almacenamiento2= new Categoria(4, "Almacenamiento","Conexión HDMI-USB");
+        listaProducto.add(new Producto(4,"HDD Externo 500GB", 50000, 6, almacenamiento2));
+        
+        Categoria utilidades= new Categoria(5, "Utilidades","Kit completo para el cuidado del computador");
+        listaProducto.add(new Producto(5,"Kit Limpieza", 3000, 20, utilidades));
+        
+        Categoria multimedia= new Categoria(6, "Multimdia","Conexión USB");
+        listaProducto.add(new Producto(6,"Cámara GoPro HD", 120000, 23, multimedia));
+    }
+    
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
+
+    @Override   
+    public Producto buscarProducto(String codigo) {
+        
+        for(Producto aux : listaProducto){
+            if(codigo.equals(aux.getCodigo())){
+                return aux;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public ArrayList<Producto> getProductos() {
+        return listaProducto;
+    }
+
+    @Override
+    public String vender(String codigo, String cantidad) {
+        
+        for(Producto aux : listaProducto){
+            if(codigo.equals(aux.getCodigo())){
+                if(Integer.parseInt(cantidad)<=aux.getStock()){
+                    
+                    return""+(Integer.parseInt(cantidad)*aux.getPrecio()) ;
+                }else{
+                    return "No hay stock suficiente";
+                }
+                
+            }
+            
+        }
+        return "Producto no encontrado";
+    }
+
+    
 }

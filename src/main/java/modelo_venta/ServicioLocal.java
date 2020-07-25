@@ -5,6 +5,7 @@
  */
 package modelo_venta;
 
+import java.util.ArrayList;
 import javax.ejb.Local;
 
 /**
@@ -13,5 +14,11 @@ import javax.ejb.Local;
  */
 @Local
 public interface ServicioLocal {
+
+    Producto buscarProducto(String codigo);
+
+    ArrayList<Producto> getProductos();
+
+    String vender(String codigo, String cantidad);
     
 }
