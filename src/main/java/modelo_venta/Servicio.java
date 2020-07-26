@@ -58,9 +58,9 @@ public class Servicio implements ServicioLocal {
 
     @Override
     public String vender(String codigo, String cantidad) {
-        
+        Producto aux= buscarProducto(codigo);
         for(int i=0; i<=listaProducto.size();i++){
-            Producto aux= buscarProducto(codigo);
+            
             if(Integer.parseInt(codigo)==aux.getCodigo()){
                 if(Integer.parseInt(cantidad)<=aux.getStock()){
                     aux.setStock(aux.getStock()-Integer.parseInt(cantidad));
