@@ -92,7 +92,7 @@
                         </blockquote>
                         <div class="card-image">
                             <img src="./assets/img/${producto.getImg()}">
-                            <form class="col s12" action="Productos" method="get">
+                            <form class="col s12" action="Productos" method="post">
                                 <input type="hidden" name="codigo" value="${producto.getCodigo()}"/>
                                 <input type="hidden" value="ver" name="page">  
                                 <c:if test = "${producto.getStock() <= 0}">

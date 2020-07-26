@@ -10,7 +10,7 @@
 %>
 
 <jsp:include page="./includes/header.jsp"/>
-<form action="Productos" method="get">
+<form action="Productos" method="post">
     <div class=" center-align">
         <div class="section no-pad-bot" id="index-banner-detalle">
 
