@@ -6,12 +6,11 @@
 <%@page import="modelo_venta.Producto"%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%
-    Producto producto = (Producto) request.getAttribute("Producto");
-
+    Producto producto = (Producto) request.getAttribute("Producto");  
 %>
 
 <jsp:include page="./includes/header.jsp"/>
-<form action="Productos" method="post">
+<form action="Productos" method="get">
     <div class=" center-align">
         <div class="section no-pad-bot" id="index-banner-detalle">
 

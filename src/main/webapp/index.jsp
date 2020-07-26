@@ -95,7 +95,12 @@
                             <form class="col s12" action="Productos" method="get">
                                 <input type="hidden" name="codigo" value="${producto.getCodigo()}"/>
                                 <input type="hidden" value="ver" name="page">  
-                                <button type="submit" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></button>
+                                <c:if test = "${producto.getStock() <= 0}">
+                                    <button type="button" class="btn-floating halfway-fab waves-effect waves-light grey disabled"><i class="material-icons">remove_shopping_cart</i></button>
+                                </c:if>
+                                <c:if test = "${producto.getStock() > 0}">
+                                    <button type="submit" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></button>
+                                </c:if>
                             </form>
                         </div>
                         <div class="card-content">

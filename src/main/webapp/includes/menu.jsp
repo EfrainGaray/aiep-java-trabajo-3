@@ -6,15 +6,15 @@
           
         </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#productos">Venta</a></li>
-            <li><a href="#stock">Stock</a></li>
+            <li><a href="./#productos">Venta</a></li>
+            <li><a href="./#stock">Stock</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-            <li><a href="#productos">Venta</a></li>
+            <li><a href="./#productos">Venta</a></li>
         </ul>
         <ul id="nav-mobile" class="sidenav">
-            <li><a href="#stock">Stock</a></li>
+            <li><a href="./#stock">Stock</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
