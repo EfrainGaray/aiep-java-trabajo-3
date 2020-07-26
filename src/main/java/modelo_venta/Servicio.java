@@ -60,8 +60,8 @@ public class Servicio implements ServicioLocal {
     public String vender(String codigo, String cantidad) {
         
         for(int i=0; i<=listaProducto.size();i++){
-            Producto aux= new Producto();
-            if(codigo.equals(aux.getCodigo())){
+            Producto aux= buscarProducto(codigo);
+            if(Integer.parseInt(codigo)==aux.getCodigo()){
                 if(Integer.parseInt(cantidad)<=aux.getStock()){
                     aux.setStock(aux.getStock()-Integer.parseInt(cantidad));
                     listaProducto.remove(i);

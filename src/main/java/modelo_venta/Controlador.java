@@ -79,6 +79,8 @@ public class Controlador extends HttpServlet {
         String codigo = request.getParameter("codigo");
         String cantidad= request.getParameter("cantidad");
         String respuesta=servicio.vender(codigo, cantidad);
+        
+        System.out.println(respuesta);
 
         if (respuesta.equals("Producto no encontrado")) {
             request.setAttribute("msg", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
