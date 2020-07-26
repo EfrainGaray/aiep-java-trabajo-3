@@ -78,12 +78,15 @@ public class Controlador extends HttpServlet {
         
         String codigo = request.getParameter("codigo");
         String cantidad= request.getParameter("cantidad");
-        servicio.vender(codigo, cantidad);
+        String respuesta=servicio.vender(codigo, cantidad);
 
-        if (aux == null) {
+        if (respuesta.equals("Producto no encontrado")) {
             request.setAttribute("msg", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
-        } else {
-            request.setAttribute("Producto", aux);
+        }else if(respuesta.equals("No hay stock suficiente")){
+            request.setAttribute("msg", "<div class='chip'>No hay stock suficiente<i class='close material-icons'>close</i></div>");
+        } 
+        else {
+            request.setAttribute("respuestaVenta", respuesta);
         }
         request.getRequestDispatcher("detalleVenta.jsp").forward(request, response);
 
