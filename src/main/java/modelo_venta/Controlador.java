@@ -83,9 +83,9 @@ public class Controlador extends HttpServlet {
         System.out.println(respuesta);
 
         if (respuesta.equals("Producto no encontrado")) {
-            request.setAttribute("msg", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
+            request.setAttribute("respuestaVenta", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
         }else if(respuesta.equals("No hay stock suficiente")){
-            request.setAttribute("msg", "<div class='chip'>No hay stock suficiente<i class='close material-icons'>close</i></div>");
+            request.setAttribute("respuestaVenta", "<div class='chip'>No hay stock suficiente<i class='close material-icons'>close</i></div>");
         } 
         else {
             request.setAttribute("respuestaVenta", respuesta);
