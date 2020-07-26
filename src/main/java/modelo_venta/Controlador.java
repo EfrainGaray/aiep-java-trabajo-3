@@ -8,6 +8,7 @@ package modelo_venta;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,6 +21,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "Controlador", urlPatterns = {"/Productos"})
 public class Controlador extends HttpServlet {
+
+    @EJB
+    private ServicioLocal servicio;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
