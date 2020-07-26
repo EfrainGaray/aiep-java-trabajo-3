@@ -5,6 +5,8 @@
 --%>
 <jsp:include page="./includes/header.jsp"/>
 
+
+
 <div class="section no-pad-bot" id="index-banner">
 
 </div>
@@ -15,30 +17,32 @@
 
         <!--   Icon Section   -->
         <div class="row">
-            <c:forEach var="element" items="${getProductos} ">
+
+            <c:forEach items="${servicio.getProductos()}" var="producto">
                 <div class="col s12 m4">
                     <div class="card">
-
-                        <h3 class="header purple-text center-align">PlayStation 4</h3>
-                         <blockquote>
-                            Tecnologia
+                        <h5 class="header purple-text center-align">${producto.getNombre()}</h3>
+                        <blockquote>
+                            ${producto.getCategoria().getNombre()}
                         </blockquote>
                         <div class="card-image">
                             <img src="./assets/img/producto1.png">
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
                         </div>
                         <div class="card-content">
-                            <span class="card-title">$300.000 </span>
+                            <h5 class="red-text text-accent-2">Precio $<fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${producto.getPrecio()}" /> </h5>
                             <p>
-                                Consola PS4 Slim 1TB Megapack 6 + 3 juegos + PS Plus 3 meses + Cupón Fortnite
+                                 ${producto.getCategoria().getDescripcion()}
                             </p>
                         </div>
                     </div>
                 </div>
-
             </c:forEach>
-            
+
+
+
         </div>
         <br><br>
     </div>
+</div>
     <jsp:include page="./includes/footer.jsp"/>

@@ -23,8 +23,9 @@ html {
     background-position: 0 -250px;
     min-height: 500px; 
 }
-.pinned{
+.fixed-header{
     z-index: 9999;
+    position: fixed;
 }
 #index-banner > .container  {
     background: rgba(255,255,255,.7);
@@ -39,4 +40,7 @@ blockquote{
 
 .absolute{
     position: absolute;
+}
+.text-shadow-1{
+    text-shadow: 1px 1px grey;
 }

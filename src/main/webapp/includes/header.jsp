@@ -4,11 +4,6 @@
     Author     : efraingaray
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page import="javax.naming.InitialContext"%>
-<%@page import="modelo_venta.ServicioLocal"%>
-<%! ServicioLocal servicio;%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

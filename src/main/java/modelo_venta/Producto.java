@@ -23,13 +23,15 @@ public class Producto {
     }
 
 
-    public Producto(int codigo, String nombre, int precio, int stock, Categoria categoria) {
+    public Producto(int codigo, String nombre, int precio, int stock, Categoria categoria,String img) {
 
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
         this.categoria = categoria;
+        this.img = img;
+      
     }
     
     public int getCodigo() {

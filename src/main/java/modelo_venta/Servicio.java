@@ -19,22 +19,22 @@ public class Servicio implements ServicioLocal {
     public Servicio() {
 
         Categoria dentrada= new Categoria(1, "Dispositivo de Entrada","Dispositivo optico con conexión USB");
-        listaProducto.add(new Producto(1,"Mouse", 3000, 18, dentrada));
+        listaProducto.add(new Producto(1,"Mouse", 3000, 18, dentrada,"mouse.png"));
         
         Categoria dentrada2= new Categoria(2, "Dispositivo de Entrada","Conexión USB");
-        listaProducto.add(new Producto(2,"Teclado", 5000, 15, dentrada2));
+        listaProducto.add(new Producto(2,"Teclado", 5000, 15, dentrada2,"teclado.png"));
         
         Categoria almacenamiento= new Categoria(3, "Almacenamiento","Conexión USB");
-        listaProducto.add(new Producto(3,"Pendrive 8GB", 4000, 10, almacenamiento));
+        listaProducto.add(new Producto(3,"Pendrive 8GB", 4000, 10, almacenamiento,"pendrive.png"));
         
         Categoria almacenamiento2= new Categoria(4, "Almacenamiento","Conexión HDMI-USB");
-        listaProducto.add(new Producto(4,"HDD Externo 500GB", 50000, 6, almacenamiento2));
+        listaProducto.add(new Producto(4,"HDD Externo 500GB", 50000, 6, almacenamiento2,"disco.png"));
         
         Categoria utilidades= new Categoria(5, "Utilidades","Kit completo para el cuidado del computador");
-        listaProducto.add(new Producto(5,"Kit Limpieza", 3000, 20, utilidades));
+        listaProducto.add(new Producto(5,"Kit Limpieza", 3000, 20, utilidades,"kit.png"));
         
         Categoria multimedia= new Categoria(6, "Multimdia","Conexión USB");
-        listaProducto.add(new Producto(6,"Cámara GoPro HD", 120000, 23, multimedia));
+        listaProducto.add(new Producto(6,"Cámara GoPro HD", 120000, 23, multimedia,"go-pro.png"));
     }
     
     // Add business logic below. (Right-click in editor and choose
