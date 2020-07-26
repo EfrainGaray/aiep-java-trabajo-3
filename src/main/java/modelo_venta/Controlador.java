@@ -40,7 +40,7 @@ public class Controlador extends HttpServlet {
         
         
         String codigo = request.getParameter("codigo");
-        Producto aux= new Servicio().buscarProducto(codigo);
+        Producto aux= servicio.buscarProducto(codigo);
 
         if (aux == null) {
             request.setAttribute("msg", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
