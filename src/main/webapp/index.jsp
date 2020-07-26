@@ -92,7 +92,10 @@
                         </blockquote>
                         <div class="card-image">
                             <img src="./assets/img/${producto.getImg()}">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
+                            <form class="col s12" action="Productos" method="post">
+                                <input type="hidden" name="codigo" value="${producto.getCodigo()}"/>
+                                <button type="submit" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></button>
+                            </form>
                         </div>
                         <div class="card-content">
                             <h5 class="red-text text-accent-2">Precio $<fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${producto.getPrecio()}" /> </h5>
