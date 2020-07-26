@@ -59,11 +59,15 @@ public class Servicio implements ServicioLocal {
     @Override
     public String vender(String codigo, String cantidad) {
         
-        for(Producto aux : listaProducto){
+        for(int i=0; i<=listaProducto.size();i++){
+            Producto aux= new Producto();
             if(codigo.equals(aux.getCodigo())){
                 if(Integer.parseInt(cantidad)<=aux.getStock()){
-                    
+                    aux.setStock(aux.getStock()-1);
+                    listaProducto.remove(i);
+                    listaProducto.add(aux);
                     return String.valueOf(Integer.parseInt(cantidad)*aux.getPrecio());
+
                 }else{
                     return "No hay stock suficiente";
                 }
