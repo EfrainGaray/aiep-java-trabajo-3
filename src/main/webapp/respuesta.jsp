@@ -18,7 +18,7 @@
             <div class="row center">
                 
                 <a href="./" class="btn-large waves-effect waves-light pulse purple lighten-2">Home</a>
-                    
+                     
             </div>
         </div>
     </div>   
