@@ -18,6 +18,9 @@
 <c:set var="servicio" scope="page" value="<%=servicio%>" />
 
 <jsp:include page="./includes/header.jsp"/>
+<br />
+<br />
+<br />
 
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
