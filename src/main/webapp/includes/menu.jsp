@@ -1,7 +1,7 @@
 <nav class=" blue-grey darken-2 fixed-header" role="navigation  ">
     <img src="./assets/img/logo.png" width="60" class="absolute">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">
+        <a id="logo-container" href="./" class="brand-logo">
             HEA
           
         </a>
