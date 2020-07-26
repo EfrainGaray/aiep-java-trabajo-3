@@ -44,7 +44,7 @@ public class Servicio implements ServicioLocal {
     public Producto buscarProducto(String codigo) {
         
         for(Producto aux : listaProducto){
-            if(codigo.equals(aux.getCodigo())){
+            if(codigo.equals(String.valueOf(aux.getCodigo()))){
                 return aux;
             }
         }
