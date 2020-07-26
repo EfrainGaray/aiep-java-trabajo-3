@@ -88,7 +88,7 @@ public class Controlador extends HttpServlet {
         else {
             request.setAttribute("respuestaVenta", respuesta);
         }
-        request.getRequestDispatcher("detalleVenta.jsp").forward(request, response);
+        request.getRequestDispatcher("respuesta.jsp").forward(request, response);
 
     }
     
