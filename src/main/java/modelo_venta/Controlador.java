@@ -39,8 +39,45 @@ public class Controlador extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         
+        String opcion = request.getParameter("page");
+
+        switch (page) {
+            case "ver":
+                buscarProducto(request, response);
+                break;
+            case "comprar":
+                confirmacionVenta(request, response);
+                break;
+
+        }
+
+    }
+    
+     protected void buscarProducto(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        
+        
         String codigo = request.getParameter("codigo");
         Producto aux= servicio.buscarProducto(codigo);
+
+        if (aux == null) {
+            request.setAttribute("msg", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
+        } else {
+            request.setAttribute("Producto", aux);
+        }
+        request.getRequestDispatcher("detalleVenta.jsp").forward(request, response);
+
+    }
+    
+    protected void confirmacionVenta(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        
+        
+        String codigo = request.getParameter("codigo");
+        String cantidad= request.getParameter("cantidad");
+        servicio.vender(codigo, cantidad);
 
         if (aux == null) {
             request.setAttribute("msg", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
