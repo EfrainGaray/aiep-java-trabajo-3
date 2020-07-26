@@ -37,8 +37,8 @@
                                     <div class="col s12">
                                         <p class="range-field">
                                             <input type="range" name="cantidad" id="test5" min="1" max="<%=producto.getStock()%>" value="1" />
-                                            <input type="hidden" value="<%=producto.getCodigo()%>" name="codigo">  
-                                            <input type="hidden" value="comprar" name="page">  
+                                            <input type="hidden" value="<%=producto.getCodigo()%>" name="codigo" />  
+                                            <input type="hidden" value="comprar" name="page" />  
 
                                     </div>
 
