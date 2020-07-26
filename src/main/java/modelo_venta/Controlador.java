@@ -59,6 +59,7 @@ public class Controlador extends HttpServlet {
         
         
         String codigo = request.getParameter("codigo");
+        
         Producto aux= servicio.buscarProducto(codigo);
 
         if (aux == null) {

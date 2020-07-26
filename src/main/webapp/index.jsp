@@ -94,6 +94,7 @@
                             <img src="./assets/img/${producto.getImg()}">
                             <form class="col s12" action="Productos" method="post">
                                 <input type="hidden" name="codigo" value="${producto.getCodigo()}"/>
+                                <input type="hidden" value="ver" name="page">  
                                 <button type="submit" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></button>
                             </form>
                         </div>
