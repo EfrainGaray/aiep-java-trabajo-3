@@ -41,7 +41,7 @@ public class Controlador extends HttpServlet {
         
         String opcion = request.getParameter("page");
 
-        switch (page) {
+        switch (opcion) {
             case "ver":
                 buscarProducto(request, response);
                 break;
