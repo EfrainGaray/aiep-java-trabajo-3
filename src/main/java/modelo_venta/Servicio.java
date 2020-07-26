@@ -63,7 +63,7 @@ public class Servicio implements ServicioLocal {
             Producto aux= new Producto();
             if(codigo.equals(aux.getCodigo())){
                 if(Integer.parseInt(cantidad)<=aux.getStock()){
-                    aux.setStock(aux.getStock()-1);
+                    aux.setStock(aux.getStock()-Integer.parseInt(cantidad));
                     listaProducto.remove(i);
                     listaProducto.add(aux);
                     return String.valueOf(Integer.parseInt(cantidad)*aux.getPrecio());
