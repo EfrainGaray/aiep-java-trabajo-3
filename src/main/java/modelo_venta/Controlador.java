@@ -41,9 +41,9 @@ public class Controlador extends HttpServlet {
         if (aux == null) {
             request.setAttribute("msg", "<div class='chip'>Producto no encontrado<i class='close material-icons'>close</i></div>");
         } else {
-            request.setAttribute("msg", aux);
+            request.setAttribute("Producto", aux);
         }
-        request.getRequestDispatcher(""/*Página de confirmación de venta*/).forward(request, response);
+        request.getRequestDispatcher("detalleVenta.jsp").forward(request, response);
 
     }
     
